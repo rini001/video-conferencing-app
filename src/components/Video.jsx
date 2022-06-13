@@ -5,7 +5,7 @@ import {
   selectCameraStreamByPeerID,
 } from "@100mslive/react-sdk";
 
-export const Video = ({ peers }) => {
+export const Video = ({ peers}) => {
   const hmsActions = useHMSActions();
   const videoRef = React.useRef(null);
   const videoTrack = useHMSStore(selectCameraStreamByPeerID(peers.id));
@@ -26,7 +26,7 @@ export const Video = ({ peers }) => {
   }, [videoTrack]);
   return (
     <div>
-      <video ref={videoRef} autoPlay={true} playsInline muted={true}/>
+      <video ref={videoRef} autoPlay={true} playsInline muted={true}></video>
     </div>
   );
 };
