@@ -21,7 +21,6 @@ function Video({ peer }) {
   return (
     <div>
       <video ref={videoRef} autoPlay muted playsInline></video>
-    
       <div  style={{color:"white"}}>
         <h1>{peer.name} {peer.isLocal ? "(You)" : ""}</h1>
       </div>
