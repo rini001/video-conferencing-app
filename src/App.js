@@ -3,13 +3,17 @@ import {
 
   useHMSStore,
 } from "@100mslive/react-sdk";
+import { Bottom } from "./components/Bottom";
+import Conference from "./components/Conference";
 import Join  from "./components/Join";
-import  {Room} from "./components/Room";
+import { Leave } from "./components/Leave";
 function App() {
   const isConnected = useHMSStore(selectIsConnectedToRoom);
   return (
     <div className="App">
-      <>{isConnected ?<Room/> : <Join />}</>
+      <Leave/>
+      <Bottom/>
+      <>{isConnected ?<><Conference/></> : <Join />}</>
     </div>
   );
 }

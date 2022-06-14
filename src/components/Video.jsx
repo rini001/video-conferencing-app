@@ -1,35 +1,36 @@
-import React from 'react'
+import { useRef, useEffect } from "react";
 import {
-    useHMSActions,
-    useHMSStore,
-    selectCameraStreamByPeerID
-  } from "@100mslive/react-sdk";
+  useHMSStore,
+  useHMSActions,
+  selectCameraStreamByPeerID,
+  selectIsConnectedToRoom,
+  selectIsLocalAudioEnabled,
+  selectIsLocalVideoEnabled,
+} from "@100mslive/react-sdk";
+
+function Video({ peer }) {
+  const videoRef = useRef(null);
+  const hmsActions = useHMSActions();
+  const videoTrack = useHMSStore(selectCameraStreamByPeerID(peer.id));
+  useEffect(() => {
+    if (videoRef.current && videoTrack) {
+      if (videoTrack.enabled) {
+        hmsActions.attachVideo(videoTrack.id, videoRef.current);
+      } else {
+        hmsActions.detachVideo(videoTrack.id, videoRef.current);
+      }
+    }
+  }, [videoTrack, hmsActions]);
+
   
-export const Video = ({peers}) => {
-    const hmsActions = useHMSActions();
-    const videoRef = React.useRef(null);
-    const videoTrack = useHMSStore(selectCameraStreamByPeerID(peers.id));
-  
-    React.useEffect(() => {
-      (async () => {
-        console.log(videoRef.current);
-        console.log(videoTrack);
-        if (videoRef.current && videoTrack) {
-          if (videoTrack.enabled) {
-            await hmsActions.attachVideo(videoTrack.id, videoRef.current);
-          } else {
-            await hmsActions.detachVideo(videoTrack.id, videoRef.current);
-          }
-        }
-      })();
-      //eslint-disable-next-line react-hooks/exhaustive-deps
-    }, [videoTrack]);
   return (
-    <div> <video
-    ref={videoRef}
-    autoPlay={true}
-    playsInline
-    muted={true}
-    ></video></div>
-  )
+    <div>
+      <video ref={videoRef} autoPlay muted playsInline></video>
+      <div>
+        {peer.name} {peer.isLocal ? "(You)" : ""}
+      </div>
+    </div>
+  );
 }
+
+export default Video;
