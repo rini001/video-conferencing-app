@@ -24,7 +24,7 @@ function Join() {
         token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhY2Nlc3Nfa2V5IjoiNjJhNzQyNjliODczNzg3YWEyNzBhNzA5Iiwicm9vbV9pZCI6IjYyYTc0ZjhjMjYzMDIyMWM3NWE0NGU2OSIsInVzZXJfaWQiOiJveGVvb3FheSIsInJvbGUiOiJndWVzdCIsImp0aSI6ImYwNThhZmIzLWIyMDgtNGU3Yy05NjZiLTMxYTUwM2Q1Y2RjYyIsInR5cGUiOiJhcHAiLCJ2ZXJzaW9uIjoyLCJleHAiOjE2NTUyMzgwMTl9.r-wJN65Z8d7-dohu5a6ZQc0eUyzyZbCTaPiJaUdtFWM"
     }
     else{
-        alert("Wrong Passcode Entered")
+        alert("Enter the correct Passcode")
     }
 
     hmsActions.join({
@@ -46,7 +46,7 @@ function Join() {
           id="name"
           type="text"
           name="name"
-          placeholder="Your name"
+          placeholder="USERNAME"
         />
         <input
           required
@@ -55,10 +55,10 @@ function Join() {
           id="token"
           type="text"
           name="token"
-          placeholder="Passcode"
+          placeholder="PASSCODE"
         />
       </div>
-      <button className={styles.btnJoin}>Join</button>
+      <button className={styles.btnJoin}>JOIN NOW</button>
     </form>
     </div>
     

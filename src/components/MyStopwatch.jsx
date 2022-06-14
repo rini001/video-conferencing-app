@@ -16,7 +16,7 @@ function MyStopwatch() {
   return (
     <div style={{textAlign: 'center'}}>
       <div style={{color:"white"}}>
-    <span style={{color:"white"}}>{hours}</span>:<span style={{color:"white"}}>{minutes}</span>:<span style={{color:"white"}}>{seconds}</span>
+    <span>In call :</span>  <span style={{color:"white"}}>{hours}</span>:<span style={{color:"white"}}>{minutes}</span>:<span style={{color:"white"}}>{seconds}</span>
       </div>
     </div>
   );

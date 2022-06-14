@@ -1,5 +1,4 @@
 .users{
-  border: 2px solid black;
     display:flex;
     column-gap: 20px;
 }
