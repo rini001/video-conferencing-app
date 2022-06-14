@@ -8,7 +8,7 @@ export const Leave = () => {
     <div>
         {isConnected && (
         <div>
-          <button onClick={() => hmsActions.leave()}>Leave</button>
+          <button style={{backgroundColor:"red", color:"white", border:"0px", height:"30px", width:"60px", marginTop:"10px"}} onClick={() => hmsActions.leave()}>Leave</button>
         </div>
       )}
     </div>

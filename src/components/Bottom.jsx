@@ -22,9 +22,9 @@ try {
       }
   return (
     <div style={{display:"flex", columnGap:"15px"}}>
-        <button onClick={toggleAudio}>{isLocalAudioEnabled ? <MicIcon/>:<MicOffIcon/>}</button>
+        <button  onClick={toggleAudio}>{isLocalAudioEnabled ? <MicIcon/>:<MicOffIcon/>}</button>
         <button onClick={toggleVideo}>{isLocalVideoEnabled ? <VideocamIcon/>:<VideocamOffIcon/>}</button>
-        <button onClick={shareScreen}>Share Screen</button>
+        <button style={{backgroundColor:"green", color:"white",border:"0px"}} onClick={shareScreen}>Share Screen</button>
         <MyStopwatch/>
     </div>
   )

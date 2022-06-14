@@ -2,14 +2,14 @@ body{
     background-color:rgb(26, 48, 76);
     display: grid;
     justify-content: center;
-    align-items:center;
-    margin-top: 200px;
+    align-items:center; 
 }
 .join{
     padding: 20px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     text-align: center;
     color: white;
+    margin-top: 200px;
 }
 
 form{
@@ -41,7 +41,7 @@ input:focus{
 .btnJoin{
     background-color:rgb(70, 112, 168) ;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-color: white;
+    color: white;
     width: 12rem;
     height: 1.5rem;
     border: 0px;
