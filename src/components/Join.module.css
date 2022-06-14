@@ -6,15 +6,15 @@ body{
     margin-top: 200px;
 }
 .join{
+    padding: 20px;
     background-color: rgb(195, 199, 205);
     text-align: center;
     color: rgb(26, 48, 76);
 }
-h2{
-    /* border: 2px solid blue; */
-}
+
 form{
     margin-top: -15px;
+    padding-top: 10px;
     padding-left: 20px;
     padding-right: 20px;
     padding-bottom: 20px;
@@ -35,7 +35,12 @@ input{
     width: 20rem;
     height: 2rem;
 }
+input:focus{
+    outline: none;
+}
 .btnJoin{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     width: 12rem;
     height: 1.5rem;
+    border: 0px;
 }

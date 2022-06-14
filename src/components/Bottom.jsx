@@ -4,6 +4,7 @@ import VideocamIcon from '@mui/icons-material/Videocam';
 import VideocamOffIcon from '@mui/icons-material/VideocamOff';
 import MicIcon from '@mui/icons-material/Mic';
 import MicOffIcon from '@mui/icons-material/MicOff';
+import MyStopwatch from './MyStopwatch';
 export const Bottom = () => {
     const hmsActions = useHMSActions();
     const {
@@ -24,6 +25,7 @@ try {
         <button onClick={toggleAudio}>{isLocalAudioEnabled ? <MicIcon/>:<MicOffIcon/>}</button>
         <button onClick={toggleVideo}>{isLocalVideoEnabled ? <VideocamIcon/>:<VideocamOffIcon/>}</button>
         <button onClick={shareScreen}>Share Screen</button>
+        <MyStopwatch/>
     </div>
   )
 }

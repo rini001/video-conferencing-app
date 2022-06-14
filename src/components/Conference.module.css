@@ -1,4 +1,11 @@
 .users{
+  border: 2px solid black;
     display:flex;
     column-gap: 20px;
 }
+@media only screen and (max-width:800px) {
+  .users{
+    display: grid;
+    row-gap: 15px;
+  }
+  }
