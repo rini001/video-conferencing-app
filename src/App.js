@@ -12,8 +12,8 @@ function App() {
   return (
     <div className="App">
       <Leave/>
-      <Bottom/>
-      <>{isConnected ?<><Conference/></> : <Join />}</>
+      
+      <>{isConnected ?<><Conference/> <Bottom/></>: <Join />}</>
     </div>
   );
 }
