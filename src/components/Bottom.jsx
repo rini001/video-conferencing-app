@@ -10,7 +10,7 @@ export const Bottom = () => {
       } = useAVToggle();
   return (
     <div>
-        <button onClick={toggleAudio}>{isLocalAudioEnabled ? "unmute":"mute"}</button>
+        <button onClick={toggleAudio}>{isLocalAudioEnabled ? "mute":"unmute"}</button>
     </div>
   )
 }
