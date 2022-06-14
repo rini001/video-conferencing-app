@@ -20,7 +20,7 @@ function Join() {
     e.preventDefault();
     let token;
 
-    if(inputValues.token === "rini@0001"){
+    if(inputValues.token === "rini@0106"){
         token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhY2Nlc3Nfa2V5IjoiNjJhNzQyNjliODczNzg3YWEyNzBhNzA5Iiwicm9vbV9pZCI6IjYyYTc0ZjhjMjYzMDIyMWM3NWE0NGU2OSIsInVzZXJfaWQiOiJveGVvb3FheSIsInJvbGUiOiJndWVzdCIsImp0aSI6ImYwNThhZmIzLWIyMDgtNGU3Yy05NjZiLTMxYTUwM2Q1Y2RjYyIsInR5cGUiOiJhcHAiLCJ2ZXJzaW9uIjoyLCJleHAiOjE2NTUyMzgwMTl9.r-wJN65Z8d7-dohu5a6ZQc0eUyzyZbCTaPiJaUdtFWM"
     }
     else{
