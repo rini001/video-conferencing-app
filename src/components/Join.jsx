@@ -1,7 +1,7 @@
 
 import { useState } from "react";
 import { useHMSActions } from "@100mslive/react-sdk";
-
+import styles from "./Join.module.css"
 function Join() {
   const hmsActions = useHMSActions();
   const [inputValues, setInputValues] = useState({
@@ -35,9 +35,10 @@ function Join() {
 
 
   return (
-    <form onSubmit={handleSubmit}>
+    <div className={styles.join}>
       <h2>Join Room</h2>
-      <div className="input-container">
+      <form onSubmit={handleSubmit}>
+      <div className={styles.inputs}>
         <input
           required
           value={inputValues.name}
@@ -47,8 +48,6 @@ function Join() {
           name="name"
           placeholder="Your name"
         />
-      </div>
-      <div className="input-container">
         <input
           required
           value={inputValues.token}
@@ -56,11 +55,13 @@ function Join() {
           id="token"
           type="text"
           name="token"
-          placeholder="Auth token"
+          placeholder="Passcode"
         />
       </div>
-      <button className="btn-primary">Join</button>
+      <button className={styles.btnJoin}>Join</button>
     </form>
+    </div>
+    
   );
 }
 

@@ -1,6 +1,8 @@
 import {
   selectIsConnectedToRoom,
 
+  useAVToggle,
+
   useHMSStore,
 } from "@100mslive/react-sdk";
 import { Bottom } from "./components/Bottom";
@@ -11,9 +13,11 @@ function App() {
   const isConnected = useHMSStore(selectIsConnectedToRoom);
   return (
     <div className="App">
+      {/* <>{isConnected  ?(isLocalVideoEnabled ? <Conference/>:"oops"): <Join />}</> */}
+      <>{isConnected?<Conference/>: <Join />}</>
+
+      {isConnected?<Bottom/>:""}
       <Leave/>
-      
-      <>{isConnected ?<><Conference/> <Bottom/></>: <Join />}</>
     </div>
   );
 }

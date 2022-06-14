@@ -3,9 +3,6 @@ import {
   useHMSStore,
   useHMSActions,
   selectCameraStreamByPeerID,
-  selectIsConnectedToRoom,
-  selectIsLocalAudioEnabled,
-  selectIsLocalVideoEnabled,
 } from "@100mslive/react-sdk";
 
 function Video({ peer }) {
@@ -21,11 +18,10 @@ function Video({ peer }) {
       }
     }
   }, [videoTrack, hmsActions]);
-
-  
   return (
     <div>
       <video ref={videoRef} autoPlay muted playsInline></video>
+    
       <div>
         {peer.name} {peer.isLocal ? "(You)" : ""}
       </div>

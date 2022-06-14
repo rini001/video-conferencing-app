@@ -1,0 +1,41 @@
+body{
+    background-color:rgb(26, 48, 76);
+    display: grid;
+    justify-content: center;
+    align-items:center;
+    margin-top: 200px;
+}
+.join{
+    background-color: rgb(195, 199, 205);
+    text-align: center;
+    color: rgb(26, 48, 76);
+}
+h2{
+    /* border: 2px solid blue; */
+}
+form{
+    margin-top: -15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    /* border: 2px solid black; */
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;  
+}
+.inputs{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    row-gap: 30px;  
+}
+input{
+    width: 20rem;
+    height: 2rem;
+}
+.btnJoin{
+    width: 12rem;
+    height: 1.5rem;
+}
