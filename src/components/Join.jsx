@@ -36,7 +36,7 @@ function Join() {
 
   return (
     <div className={styles.join}>
-      <h2>Join Room</h2>
+      <h2>VIRTUAL CONNECT</h2>
       <form onSubmit={handleSubmit}>
       <div className={styles.inputs}>
         <input
