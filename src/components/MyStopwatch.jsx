@@ -6,10 +6,10 @@ function MyStopwatch() {
     seconds,
     minutes,
     hours,
-    isRunning,
-    start,
-    pause,
-    reset,
+    // isRunning,
+    // start,
+    // pause,
+    // reset,
   } = useStopwatch({ autoStart: true });
 
 

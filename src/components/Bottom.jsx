@@ -1,6 +1,9 @@
 import { useAVToggle, useHMSActions } from '@100mslive/react-sdk';
 import React from 'react'
-
+import VideocamIcon from '@mui/icons-material/Videocam';
+import VideocamOffIcon from '@mui/icons-material/VideocamOff';
+import MicIcon from '@mui/icons-material/Mic';
+import MicOffIcon from '@mui/icons-material/MicOff';
 export const Bottom = () => {
     const hmsActions = useHMSActions();
     const {
@@ -17,10 +20,10 @@ try {
 }
       }
   return (
-    <div>
-        <button onClick={toggleAudio}>{isLocalAudioEnabled ? "mute":"unmute"}</button>
-        <button onClick={toggleVideo}>{isLocalVideoEnabled ? "hide":"unhide"}</button>
-        <button onClick={shareScreen}>Share</button>
+    <div style={{display:"flex", columnGap:"15px"}}>
+        <button onClick={toggleAudio}>{isLocalAudioEnabled ? <MicIcon/>:<MicOffIcon/>}</button>
+        <button onClick={toggleVideo}>{isLocalVideoEnabled ? <VideocamIcon/>:<VideocamOffIcon/>}</button>
+        <button onClick={shareScreen}>Share Screen</button>
     </div>
   )
 }
