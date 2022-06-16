@@ -21,7 +21,7 @@ function Join() {
     let token;
 
     if(inputValues.token === "rini@0106"){
-        token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhY2Nlc3Nfa2V5IjoiNjJhNzQyNjliODczNzg3YWEyNzBhNzA5Iiwicm9vbV9pZCI6IjYyYTc0ZjhjMjYzMDIyMWM3NWE0NGU2OSIsInVzZXJfaWQiOiJ2a3F5aWliayIsInJvbGUiOiJndWVzdCIsImp0aSI6IjFmOGVjMzkwLWQ3OGUtNGIwNy04ZmM2LTBmZDY2YjkwYzk4MCIsInR5cGUiOiJhcHAiLCJ2ZXJzaW9uIjoyLCJleHAiOjE2NTUzNTU3MzJ9.L4zl5C2tjAKXwAtsgVCctPDhXaVwyvy9lFOfnWEf330"
+        token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhY2Nlc3Nfa2V5IjoiNjJhNzQyNjliODczNzg3YWEyNzBhNzA5Iiwicm9vbV9pZCI6IjYyYTc0ZjhjMjYzMDIyMWM3NWE0NGU2OSIsInVzZXJfaWQiOiJrZmFhb2xyYSIsInJvbGUiOiJndWVzdCIsImp0aSI6IjBhMmFlYmE1LWRkYTctNGE1ZS1hNGIzLTc3Mjg0MmEzMzNkMSIsInR5cGUiOiJhcHAiLCJ2ZXJzaW9uIjoyLCJleHAiOjE2NTU0NjQwNzZ9.y7smuvRnKNjG4C9TU_h-ecIgQ5GVjm866s84kmVzyD8"
     }
     else{
         alert("Enter the correct Passcode")
